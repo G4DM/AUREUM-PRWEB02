@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="es-ES">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AUREUM | Pedidos a Domicilio</title>
+		<link rel="stylesheet" href="./src/style.css" />
+		<!-- Font Awesome CDN -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+	</head>
+	<body>
+		<!-- HEADER -->
+		<header class="fixed top-0 left-0 w-full z-50">
+			<!-- NAVBAR -->
+			<nav
+				class="bg-[#0f0f0f]/90 backdrop-blur-md shadow-lg h-16 flex items-center justify-between px-6 lg:px-12">
+				<!-- Hamburguesa -->
+				<button id="openMenu" class="text-[#f5f2ea] hover:text-[#c9a24d] transition-all duration-300 z-50">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-7 w-7"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+						stroke-width="2">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+					</svg>
+				</button>
+
+				<!-- Logo centrado -->
+				<img src="/img/logo-aureum.png" alt="Aureum Logo" class="h-10 absolute left-1/2 -translate-x-1/2" />
+
+				<div class="w-7"></div>
+			</nav>
+
+			<!-- MENÚ FULLSCREEN PREMIUM -->
+			<div
+				id="menu"
+				class="fixed inset-0 bg-[#0f0f0f]/90 backdrop-blur-xl flex flex-col items-center justify-center gap-10 text-2xl opacity-0 pointer-events-none transition-all duration-500">
+				<!-- Cerrar -->
+				<button
+					id="closeMenu"
+					class="absolute top-6 right-6 text-[#f5f2ea] hover:text-[#c9a24d] transition-all duration-300 z-50">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-10 w-10"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+						stroke-width="2">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+					</svg>
+				</button>
+
+				<!-- Links principales -->
+				<a
+					href="./index.html/#hero-section"
+					class="hover:text-[#c9a24d] transition-all duration-300 transform hover:scale-110"
+					>Inicio</a
+				>
+				<a
+					href="./index.html/#about-us-section"
+					class="hover:text-[#c9a24d] transition-all duration-300 transform hover:scale-110"
+					>Sobre AUREUM</a
+				>
+				<a
+					href="./index.html/#services-section"
+					class="hover:text-[#c9a24d] transition-all duration-300 transform hover:scale-110"
+					>Servicios que ofrecemos</a
+				>
+				<a
+					href="./index.html/#celebrities-section"
+					class="hover:text-[#c9a24d] transition-all duration-300 transform hover:scale-110"
+					>Celebridades satisfechas</a
+				>
+				<a
+					href="./index.html/#reviews-section"
+					class="hover:text-[#c9a24d] transition-all duration-300 transform hover:scale-110"
+					>Nuestros clientes</a
+				>
+				<a
+					href="./index.html/#chef-video-section"
+					class="hover:text-[#c9a24d] transition-all duration-300 transform hover:scale-110"
+					>Nuestro personal</a
+				>
+				<a
+					href="./index.html/#specialties-section"
+					class="hover:text-[#c9a24d] transition-all duration-300 transform hover:scale-110"
+					>Nuestras especialidades</a
+				>
+
+				<!-- CTAs -->
+				<a
+					href="./reservas.html"
+					class="cta-menu-btn mt-8 px-8 py-3 border-2 border-[#c9a24d] text-[#c9a24d] rounded-lg hover:bg-[#c9a24d] hover:text-[#0f0f0f] transition-all duration-300 font-semibold">
+					Reserva Ahora
+				</a>
+
+				<a
+					href="./pedidos.html"
+					class="cta-menu-btn px-8 py-3 bg-[#c9a24d] text-[#0f0f0f] rounded-lg font-semibold hover:bg-[#e6d8a8] transition-all duration-300">
+					Pide a domicilio
+				</a>
+			</div>
+		</header>
+
+		<!-- MAIN -->
+		<main>
+			<!-- HERO SECTION -->
+			<section id="hero-section" class="pedidos-page">
+				<div class="hero-overlay">
+					<article class="hero-content">
+						<h1 id="hero-title">PEDIDOS</h1>
+						<div class="hero-divider"></div>
+						<h3 id="hero-subtitle">Haz tu pedido a domicilio con AUREUM</h3>
+						<a href="#form-pedido" id="cta-main-btn">Realiza tu Pedido</a>
+					</article>
+				</div>
+			</section>
+
+			<!-- FORM PEDIDO SECTION -->
+			<section id="form-section" class="py-20 bg-[#0f0f0f] flex justify-center">
+				<form
+					id="form-pedido"
+					action="#"
+					class="bg-[#1a1a1a] shadow-lg rounded-2xl p-8 sm:p-12 w-full max-w-2xl flex flex-col gap-6">
+					<h2 class="text-3xl font-bold text-[#f5f2ea] text-center">Haz tu Pedido</h2>
+					<p class="text-[#c9a24d] text-center mb-6">Rellena los datos y confirmaremos tu pedido</p>
+
+					<!-- Nombre y Apellido -->
+					<div class="flex flex-col sm:flex-row gap-4">
+						<input type="text" name="nombre" placeholder="Nombre" required class="form-input flex-1" />
+						<input type="text" name="apellido" placeholder="Apellido" required class="form-input flex-1" />
+					</div>
+
+					<!-- Email y Teléfono -->
+					<div class="flex flex-col sm:flex-row gap-4">
+						<input type="email" name="email" placeholder="Email" required class="form-input flex-1" />
+						<input type="tel" name="telefono" placeholder="Teléfono" required class="form-input flex-1" />
+					</div>
+
+					<!-- Dirección -->
+					<input
+						type="text"
+						name="direccion"
+						placeholder="Dirección de entrega"
+						required
+						class="form-input" />
+
+					<!-- Plato / Pedido -->
+					<textarea
+						name="pedido"
+						rows="4"
+						placeholder="Indica los platos que deseas pedir"
+						class="form-input resize-none"></textarea>
+
+					<!-- Horario de entrega -->
+					<input type="time" name="hora" placeholder="Hora de entrega" required class="form-input" />
+
+					<!-- Comentarios adicionales -->
+					<textarea
+						name="comentarios"
+						rows="2"
+						placeholder="Comentarios adicionales"
+						class="form-input resize-none"></textarea>
+
+					<!-- Botón enviar -->
+					<button
+						type="submit"
+						class="bg-[#c9a24d] text-[#0f0f0f] font-semibold py-3 rounded-lg hover:bg-[#e6d8a8] transition-all duration-300">
+						Enviar Pedido
+					</button>
+				</form>
+			</section>
+		</main>
+
+		<!-- FOOTER -->
+		<footer id="footer">
+			<div class="footer-content">
+				<div class="footer-logo">
+					<h3>AUREUM</h3>
+					<p>Experiencia Gastronómica de Alta Cocina</p>
+				</div>
+				<div class="footer-info">
+					<div class="footer-section">
+						<h4>Contacto</h4>
+						<p><i class="fas fa-map-marker-alt"></i> Plaza de la Virgen, 2, 46001 Valencia, España</p>
+						<p><i class="fas fa-phone"></i> +34 912 345 678</p>
+						<p><i class="fas fa-envelope"></i> contacto@aureum.es</p>
+					</div>
+					<div class="footer-section">
+						<h4>Horario</h4>
+						<p>Martes a Sábado</p>
+						<p>10:00 - 13:00 | 20:00 - 23:30</p>
+						<p>Domingo y Lunes cerrado</p>
+					</div>
+					<div class="footer-section">
+						<h4>Síguenos</h4>
+						<div class="footer-socials">
+							<a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+							<a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+							<a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>2026 &copy; AUREUM. Todos los derechos reservados</p>
+			</div>
+		</footer>
+
+		<script src="./src/main.js"></script>
+	</body>
+</html>

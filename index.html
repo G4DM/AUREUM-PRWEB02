@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="es-ES">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AUREUM | Restaurante de Alta Cocina</title>
+		<link rel="stylesheet" href="./src/style.css" />
+		<!-- Font Awesome CDN -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+	</head>
+	<body>
+		<!-- HEADER -->
+		<header class="fixed top-0 left-0 w-full z-50">
+			<!-- NAVBAR -->
+			<nav
+				class="bg-[#0f0f0f]/90 backdrop-blur-md shadow-lg h-16 flex items-center justify-between px-6 lg:px-12">
+				<!-- Hamburguesa -->
+				<button id="openMenu" class="text-[#f5f2ea] hover:text-[#c9a24d] transition-all duration-300 z-50">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-7 w-7"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+						stroke-width="2">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+					</svg>
+				</button>
+
+				<!-- Logo centrado -->
+				<img src="/img/logo-aureum.png" alt="Aureum Logo" class="h-10 absolute left-1/2 -translate-x-1/2" />
+
+				<div class="w-7"></div>
+			</nav>
+
+			<!-- MENÚ FULLSCREEN PREMIUM -->
+			<div
+				id="menu"
+				class="fixed inset-0 bg-[#0f0f0f]/90 backdrop-blur-xl flex flex-col items-center justify-center gap-10 text-2xl opacity-0 pointer-events-none transition-all duration-500">
+				<!-- Cerrar -->
+				<button
+					id="closeMenu"
+					class="absolute top-6 right-6 text-[#f5f2ea] hover:text-[#c9a24d] transition-all duration-300 z-50">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-10 w-10"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+						stroke-width="2">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+					</svg>
+				</button>
+
+				<!-- Links principales -->
+				<a href="#hero-section" class="hover:text-[#c9a24d] transition-all duration-300 transform hover:scale-110"
+					>Inicio</a
+				>
+				<a href="#about-us-section" class="hover:text-[#c9a24d] transition-all duration-300 transform hover:scale-110"
+					>Sobre AUREUM</a
+				>
+				<a
+					href="#services-section"
+					class="hover:text-[#c9a24d] transition-all duration-300 transform hover:scale-110"
+					>Servicios que ofrecemos</a
+				>
+				<a href="#celebrities-section" class="hover:text-[#c9a24d] transition-all duration-300 transform hover:scale-110"
+					>Celebridades satisfechas</a
+				>
+				<a href="#reviews-section" class="hover:text-[#c9a24d] transition-all duration-300 transform hover:scale-110"
+					>Nuestros clientes</a
+				>
+				<a href="#chef-video-section" class="hover:text-[#c9a24d] transition-all duration-300 transform hover:scale-110"
+					>Nuestro personal</a
+				>
+				<a href="#specialties-section" class="hover:text-[#c9a24d] transition-all duration-300 transform hover:scale-110"
+					>Nuestras especialidades</a
+				>
+
+				<!-- CTAs -->
+				<a
+					href="/reservas.html"
+					class="cta-menu-btn mt-8 px-8 py-3 border-2 border-[#c9a24d] text-[#c9a24d] rounded-lg hover:bg-[#c9a24d] hover:text-[#0f0f0f] transition-all duration-300 font-semibold">
+					Reserva Ahora
+				</a>
+
+				<a
+					href="/pedidos.html"
+					class="cta-menu-btn px-8 py-3 bg-[#c9a24d] text-[#0f0f0f] rounded-lg font-semibold hover:bg-[#e6d8a8] transition-all duration-300">
+					Pide a domicilio
+				</a>
+			</div>
+		</header>
+
+		<!-- MAIN -->
+		<main">
+			<!-- HERO SECTION -->
+			<section id="hero-section">
+				<div class="hero-overlay">
+					<article class="hero-content">
+						<h1 id="hero-title">AUREUM</h1>
+						<div class="hero-divider"></div>
+						<h3 id="hero-subtitle">Experiencia Gastronómica de Alta Cocina</h3>
+						<a href="./reservas.html" id="cta-main-btn">Reserva tu Mesa</a>
+					</article>
+				</div>
+			</section>
+
+			<!-- ABOUT US SECTION -->
+			<section id="about-us-section">
+				<article class="about-container">
+					<div class="about-icon">
+						<i class="fas fa-crown"></i>
+					</div>
+					<h2 id="about-us-title">Bienvenido a AUREUM</h2>
+					<div class="title-divider"></div>
+					<p class="about-us-text">
+						En AUREUM, creemos que cada plato cuenta una historia. Nuestra filosofía combina la excelencia
+						culinaria con ingredientes de la más alta calidad, creando experiencias gastronómicas
+						inolvidables que deleitan todos los sentidos.
+					</p>
+					<p class="about-us-text">
+						Nuestro chef ejecutivo y su equipo trabajan con pasión para ofrecerte una cocina contemporánea
+						que honra las tradiciones mientras abraza la innovación. Cada visita a AUREUM es un viaje único
+						a través de sabores excepcionales en un ambiente de elegancia refinada.
+					</p>
+					<div class="about-features">
+						<div class="feature-item">
+							<i class="fas fa-utensils"></i>
+							<h4>Cocina de Autor</h4>
+							<p>Platos únicos creados por nuestro chef estrella</p>
+						</div>
+						<div class="feature-item">
+							<i class="fas fa-wine-glass-alt"></i>
+							<h4>Carta de Vinos</h4>
+							<p>Selección exclusiva de los mejores viñedos</p>
+						</div>
+						<div class="feature-item">
+							<i class="fas fa-gem"></i>
+							<h4>Ambiente Exclusivo</h4>
+							<p>Diseño elegante y sofisticado</p>
+						</div>
+					</div>
+
+					<!-- MAPA DE UBICACIÓN -->
+					<div class="location-section">
+						<h3 class="location-title">Encuéntranos en Valencia</h3>
+						<div class="title-divider"></div>
+						<div class="map-container">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12318.984108546727!2d-0.39500975968519103!3d39.475065937755495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4d5a450111%3A0x1ac3f05bf7b888d3!2sCiutat%20Vella%2C%20Val%C3%A8ncia%2C%20Valencia!5e0!3m2!1ses!2ses!4v1769674171862!5m2!1ses!2ses"
+								width="100%"
+								height="450"
+								style="border: 0"
+								allowfullscreen=""
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade">
+							</iframe>
+						</div>
+						<p class="location-address">
+							<i class="fas fa-map-marker-alt"></i>
+							Plaza de la Virgen, 2, 46001 Valencia, España
+						</p>
+					</div>
+				</article>
+			</section>
+
+			<!-- SERVICES SECTION -->
+			<section id="services-section">
+				<h2 class="services-main-title">Nuestros Servicios</h2>
+				<div class="title-divider center"></div>
+				<p class="services-intro">Experiencias culinarias diseñadas para cada ocasión especial</p>
+
+				<div class="services-container">
+					<!-- MENÚ DEGUSTACIÓN -->
+					<article class="service-card">
+						<div class="service-icon-wrapper">
+							<i class="fas fa-concierge-bell service-icon"></i>
+						</div>
+						<h3 class="service-title">Menú Degustación</h3>
+						<p class="service-text">
+							Un viaje gastronómico de siete platos elaborado por nuestro chef, donde cada creación es una
+							obra maestra de sabor y presentación. Incluye maridaje de vinos premium.
+						</p>
+						<ul class="service-list">
+							<li><i class="fas fa-check"></i> 7 platos de autor</li>
+							<li><i class="fas fa-check"></i> Maridaje de vinos premium</li>
+							<li><i class="fas fa-check"></i> Ingredientes de temporada</li>
+							<li><i class="fas fa-check"></i> Experiencia de 3 horas</li>
+						</ul>
+						<div class="service-price">145€ por persona</div>
+					</article>
+
+					<!-- EVENTOS PRIVADOS -->
+					<article class="service-card featured">
+						<div class="featured-badge">Popular</div>
+						<div class="service-icon-wrapper">
+							<i class="fas fa-glass-cheers service-icon"></i>
+						</div>
+						<h3 class="service-title">Eventos Privados</h3>
+						<p class="service-text">
+							Celebra tus momentos más especiales en nuestro salón privado. Ofrecemos menús personalizados
+							y un servicio impecable para bodas, aniversarios y eventos corporativos.
+						</p>
+						<ul class="service-list">
+							<li><i class="fas fa-check"></i> Salón privado exclusivo</li>
+							<li><i class="fas fa-check"></i> Menú personalizado</li>
+							<li><i class="fas fa-check"></i> Servicio de sommelier</li>
+							<li><i class="fas fa-check"></i> Hasta 40 comensales</li>
+						</ul>
+						<div class="service-price">Desde 120€ por persona</div>
+					</article>
+
+					<!-- EXPERIENCIA CHEF'S TABLE -->
+					<article class="service-card">
+						<div class="service-icon-wrapper">
+							<i class="fas fa-fire service-icon"></i>
+						</div>
+						<h3 class="service-title">Chef's Table</h3>
+						<p class="service-text">
+							Una experiencia íntima frente a nuestra cocina abierta. Observa la magia mientras nuestro
+							chef prepara un menú exclusivo especialmente para ti y tus acompañantes.
+						</p>
+						<ul class="service-list">
+							<li><i class="fas fa-check"></i> Mesa frente a la cocina</li>
+							<li><i class="fas fa-check"></i> Interacción con el chef</li>
+							<li><i class="fas fa-check"></i> Menú sorpresa exclusivo</li>
+							<li><i class="fas fa-check"></i> Máximo 6 personas</li>
+						</ul>
+						<div class="service-price">195€ por persona</div>
+					</article>
+				</div>
+			</section>
+
+			<!-- CELEBRITIES SECTION -->
+			<section id="celebrities-section">
+				<h2 class="celebrities-title">Celebridades que nos visitaron</h2>
+				<div class="title-divider center"></div>
+				<p class="celebrities-intro">Reconocidos por las personalidades más destacadas</p>
+
+				<div class="celebrities-container">
+					<div class="celebrity-item">
+						<div class="celebrity-image">
+							<img src="/img/ferran-adria.webp" alt="Celebrity 1" />
+							<div class="celebrity-overlay">
+								<p class="celebrity-name">Ferran Adrià</p>
+								<p class="celebrity-role">Chef Reconocido</p>
+							</div>
+						</div>
+					</div>
+					<div class="celebrity-item">
+						<div class="celebrity-image">
+							<img src="/img/penelope-cruz.webp" alt="Celebrity 2" />
+							<div class="celebrity-overlay">
+								<p class="celebrity-name">Penélope Cruz</p>
+								<p class="celebrity-role">Actriz</p>
+							</div>
+						</div>
+					</div>
+					<div class="celebrity-item">
+						<div class="celebrity-image">
+							<img src="/img/rafael-nadal.webp" alt="Celebrity 3" />
+							<div class="celebrity-overlay">
+								<p class="celebrity-name">Rafael Nadal</p>
+								<p class="celebrity-role">Deportista</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- REVIEWS SECTION -->
+			<section id="reviews-section">
+				<h2 class="reviews-title">Lo que dicen nuestros clientes</h2>
+				<div class="title-divider center"></div>
+
+				<div class="reviews-container">
+					<article class="review-card">
+						<div class="review-stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<p class="review-text">
+							"Una experiencia gastronómica inolvidable. Cada plato es una obra de arte y el servicio es
+							impecable. Sin duda, el mejor restaurante de Valencia."
+						</p>
+						<div class="review-author">
+							<div class="author-avatar">MC</div>
+							<div class="author-info">
+								<h4>María Carmen</h4>
+								<p>Cliente frecuente</p>
+							</div>
+						</div>
+					</article>
+
+					<article class="review-card">
+						<div class="review-stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<p class="review-text">
+							"El menú degustación superó todas nuestras expectativas. La combinación de sabores es
+							extraordinaria y el maridaje de vinos, perfecto. Totalmente recomendable."
+						</p>
+						<div class="review-author">
+							<div class="author-avatar">JL</div>
+							<div class="author-info">
+								<h4>José Luis</h4>
+								<p>Crítico gastronómico</p>
+							</div>
+						</div>
+					</article>
+
+					<article class="review-card">
+						<div class="review-stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<p class="review-text">
+							"Celebramos nuestro aniversario en AUREUM y fue mágico. El ambiente, la atención
+							personalizada y cada detalle fueron perfectos. Una velada que siempre recordaremos."
+						</p>
+						<div class="review-author">
+							<div class="author-avatar">AR</div>
+							<div class="author-info">
+								<h4>Ana & Roberto</h4>
+								<p>Pareja celebrando aniversario</p>
+							</div>
+						</div>
+					</article>
+
+					<article class="review-card">
+						<div class="review-stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<p class="review-text">
+							"La experiencia Chef's Table es única. Ver cómo preparan los platos frente a ti y poder
+							conversar con el chef añade un valor especial. Altamente recomendado."
+						</p>
+						<div class="review-author">
+							<div class="author-avatar">DM</div>
+							<div class="author-info">
+								<h4>David Martínez</h4>
+								<p>Empresario</p>
+							</div>
+						</div>
+					</article>
+
+					<article class="review-card">
+						<div class="review-stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<p class="review-text">
+							"Vine desde Barcelona para probar AUREUM y valió cada kilómetro. La presentación de los
+							platos, los sabores innovadores y el servicio de primera clase hacen de este lugar algo
+							excepcional."
+						</p>
+						<div class="review-author">
+							<div class="author-avatar">LG</div>
+							<div class="author-info">
+								<h4>Laura García</h4>
+								<p>Amante de la gastronomía</p>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<!-- CHEF & VIDEO SECTION -->
+			<section id="chef-video-section">
+				<div class="chef-video-container">
+					<!-- COLUMNA IZQUIERDA: CHEF -->
+					<div class="chef-column">
+						<div class="chef-image-wrapper">
+							<img src="/img/chef-alessandro.jpg" alt="Chef Ejecutivo" class="chef-image" />
+						</div>
+						<div class="chef-greeting">
+							<h3 class="chef-name">Chef Alessandro Martini</h3>
+							<div class="title-divider"></div>
+							<p class="chef-message">
+								"Bienvenidos a AUREUM. Mi pasión es crear experiencias culinarias que toquen el alma.
+								Cada plato que preparamos es una celebración de los mejores ingredientes, tratados con
+								respeto y amor. Les invito a embarcarse en este viaje gastronómico con nosotros."
+							</p>
+							<p class="chef-signature">— Alessandro Martini</p>
+							<p class="chef-title">Chef Ejecutivo & Propietario</p>
+						</div>
+					</div>
+
+					<!-- COLUMNA DERECHA: VIDEO -->
+					<div class="video-column">
+						<h3 class="video-title">En nuestra cocina</h3>
+						<div class="title-divider"></div>
+						<div class="video-wrapper">
+							<iframe
+								width="100%"
+								height="400"
+								src="https://www.youtube.com/embed/CBSsL4u_nng?si=S1aya85u-wt8AmIX"
+								title="AUREUM - Behind the Scenes"
+								frameborder="0"
+								allow="
+									accelerometer;
+									autoplay;
+									clipboard-write;
+									encrypted-media;
+									gyroscope;
+									picture-in-picture;
+								"
+								allowfullscreen>
+							</iframe>
+						</div>
+						<p class="video-description">
+							Descubre los secretos detrás de nuestra cocina de alta gama. Observa cómo nuestro equipo de
+							chefs prepara meticulosamente cada plato con técnicas innovadoras y pasión por la
+							excelencia.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- SPECIALTIES SECTION -->
+			<section id="specialties-section">
+				<div class="specialties-overlay">
+					<h2 id="specialties-title">Nuestras Especialidades</h2>
+					<div class="title-divider center"></div>
+					<div class="specialties-container">
+						<article class="specialty-card mar">
+							<div class="specialty-icon">
+								<i class="fas fa-fish"></i>
+							</div>
+							<h3 class="specialty-title">Mar</h3>
+							<p class="specialty-text">
+								Pescados y mariscos frescos del día, preparados con técnicas contemporáneas que resaltan
+								la pureza de cada ingrediente marino.
+							</p>
+							<a href="#menu" class="specialty-btn">Ver Menú</a>
+						</article>
+
+						<article class="specialty-card tierra">
+							<div class="specialty-icon">
+								<i class="fas fa-drumstick-bite"></i>
+							</div>
+							<h3 class="specialty-title">Tierra</h3>
+							<p class="specialty-text">
+								Carnes premium de las mejores ganaderías, acompañadas de vegetales orgánicos de
+								producción local y salsas artesanales.
+							</p>
+							<a href="#menu" class="specialty-btn">Ver Menú</a>
+						</article>
+
+						<article class="specialty-card postre">
+							<div class="specialty-icon">
+								<i class="fas fa-birthday-cake"></i>
+							</div>
+							<h3 class="specialty-title">Postres de Autor</h3>
+							<p class="specialty-text">
+								Creaciones dulces que son verdaderas obras de arte. Nuestro chef pastelero transforma
+								ingredientes selectos en experiencias memorables.
+							</p>
+							<a href="#menu" class="specialty-btn">Ver Menú</a>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- RESERVATIONS SECTION -->
+			<section id="reservas">
+				<div class="reservations-container">
+					<h2 class="reservations-title">Reserva tu Mesa</h2>
+					<div class="title-divider center"></div>
+					<p class="reservations-intro">Asegura tu experiencia gastronómica en AUREUM</p>
+
+					<div class="reservation-info">
+						<div class="info-item">
+							<i class="fas fa-clock"></i>
+							<div>
+								<h4>Horario</h4>
+								<p>Almuerzo: 10:00 - 13:00</p>
+								<p>Cena: 20:00 - 23:30</p>
+							</div>
+						</div>
+						<div class="info-item">
+							<i class="fas fa-phone-alt"></i>
+							<div>
+								<h4>Teléfono</h4>
+								<p>+34 912 345 678</p>
+							</div>
+						</div>
+						<div class="info-item">
+							<i class="fas fa-envelope"></i>
+							<div>
+								<h4>Email</h4>
+								<p>
+                  contacto@aureum.es
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="cta-buttons">
+						<a href="./reservas.html" class="cta-primary">Reservar Ahora</a>
+						<a href="#menu" class="cta-secondary">Ver Menú</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- FOOTER -->
+		<footer id="footer">
+			<div class="footer-content">
+				<div class="footer-logo">
+					<h3>AUREUM</h3>
+					<p>Experiencia Gastronómica de Alta Cocina</p>
+				</div>
+				<div class="footer-info">
+					<div class="footer-section">
+						<h4>Contacto</h4>
+						<p><i class="fas fa-map-marker-alt"></i> Plaza de la Virgen, 2, 46001 Valencia, España</p>
+						<p><i class="fas fa-phone"></i> +34 912 345 678</p>
+						<p>
+							<i class="fas fa-envelope"></i>
+              contacto@aureum.es
+						</p>
+					</div>
+					<div class="footer-section">
+						<h4>Horario</h4>
+						<p>Martes a Sábado</p>
+						<p>10:00 - 13:00 | 20:00 - 23:30</p>
+						<p>Domingo y Lunes cerrado</p>
+					</div>
+					<div class="footer-section">
+						<h4>Síguenos</h4>
+						<div class="footer-socials">
+							<a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+							<a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+							<a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>2026 &copy; AUREUM. Todos los derechos reservados</p>
+			</div>
+		</footer>
+
+		<script src="./src/main.js"></script>
+	</body>
+</html>
